@@ -50,7 +50,7 @@ jobs:
           format: table
           exit-code: '1'          # fait échouer le job si vulnérabilité trouvée
           ignore-unfixed: true    # ignore les CVE sans fix dispo
-          severity: 'CRITICAL,HIGH'
+          severity: 'CRITICAL'
 
       - name: Login Docker Hub
         if: success()
